@@ -4,8 +4,7 @@
 #include <allegro5\allegro.h>
 
 //constante provizorii
-#define defaultWindowW 800
-#define defaultWindowH 600
+const int defaultWindowW = 800, defaultWindowH = 600;
 
 ALLEGRO_DISPLAY *window;
 int windowW, windowH;
@@ -31,7 +30,7 @@ void init(){
 	al_install_joystick();
 	
 	deserialize();
-	window = al_create_display(window_w, window_h);
+	window = al_create_display(windowW, windowH);
 
 	loopEnd = 0;
 }
