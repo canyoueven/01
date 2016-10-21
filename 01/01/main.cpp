@@ -4,16 +4,16 @@
 #include <allegro5\allegro.h>
 
 //constante provizorii
-#define default_window_w 800
-#define default_window_h 600
+#define defaultWindowW 800
+#define defaultWindowH 600
 
 ALLEGRO_DISPLAY *window;
-int window_w, window_h;
+int windowW, windowH;
 
 //---functii momentan inutile---
 void deserialize() {
-	window_w = default_window_w;
-	window_h = default_window_h;
+	windowW = defaultWindowW;
+	windowH = defaultWindowH;
 
 }
 
@@ -22,7 +22,7 @@ void serialize() {
 }
 //----------------------------
 
-bool loop_end;
+bool loopEnd;
 
 void init(){
 	al_init();
@@ -33,7 +33,7 @@ void init(){
 	deserialize();
 	window = al_create_display(window_w, window_h);
 
-	loop_end = 0;
+	loopEnd = 0;
 }
 
 void end() {
@@ -47,7 +47,7 @@ void end() {
 
 void main_loop() {
 
-	while (!loop_end) {
+	while (!loopEnd) {
 
 		ALLEGRO_COLOR background_color = al_map_rgb(0, 0, 255);
 
