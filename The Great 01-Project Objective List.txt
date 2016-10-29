@@ -1,0 +1,108 @@
+	- The Great 01-Project Objective List -
+
+1. Render:
+	a* - basic rendering of main objects (i.e. player sprite, floor)
+	b - menu rendering
+		a* - pause screen
+			a* - basinc buttons
+		
+		b - settings screen |included in 7.a|
+			a - setting checkboxes 
+			b - setting sliders
+		
+		c* - level finish screen
+		
+		d - additional screens (in case of adding features from 6.)
+			a - level list screen |included in 6.i|
+			b - player fail screens
+				a - player <- enemy death |included in 6.d|
+				b - player <- spike death |included in 6.g|
+				c - player <- pit death |included in 6.h|
+				
+	c - additional rendering (in case of adding features from 6.)
+		a - animations
+			a - hook animation |included in 6.c|
+			b - player hit animation |included in 6.d|
+			c - enemy hit animation |included in 6.e|
+	
+	
+	
+2. Input
+	a* - basic player movement (moving left and right, jumping)
+	b* - pause
+	c* - menu interaction
+	b - additional input (in case of adding features from 6.)
+		a - hook launching |included in 6.c|
+		b - attacking |included in 6.e|
+	
+	
+	
+3. General Event handling
+	a* - player movement
+	b - collisions
+		a* - basic collision check and response
+		b - advanced, more efficient collision check
+		c - additional collisions (in case of adding features from 6.)
+			a - enemy hit check |included in 6.d|
+			b - player hit check |included in 6.e|
+	
+	c - additional events (in case of adding features from 6.)
+		a - hook launching/grappling |included in 6.c|
+		b - player hit |included in 6.d|
+			a - player <- enemy death
+			
+		c - enemy hit |included in 6.e|
+			a - enemy <- player death
+			
+		d - player spike hit |included in 6.g|
+			a - player <- spike death
+			
+		e - player <- pit death |included in 6.h|
+		
+		
+		
+4. Sound
+	a* - basic events (jumping, hitting the floor/a wall, level finish screen)
+	b - additional sounds (in case of adding features from 6.)
+		a - wall grind sound |included in 6.a|
+		b - wall jump sound |included in 6.b|
+		c - hook launch/hit sound |included in 6.c|
+		d - enemy hit |included in 6.d|
+			a - player <- enemy death
+			
+		e - player attack |included in 6.e|
+		f - player hit |included in 6.d|
+			a - enemy <- player death
+			
+		g - enemy attack |included in 6.f|
+	
+	
+	
+5. Gameplay
+	a* - level finish point
+	b - additional gameplay aspects (in case of adding features from 6.)
+		a - player enemy hit death |included in 6.d|
+		b - player environmental death
+			a - pit death |included in 6.g|
+			b - spike death |included in 6.h|
+		
+	
+	
+6. Additional Features
+	a - wall grinding
+	b - wall jumping
+	c - grappling hook
+	d - enemy object
+	e - player attack
+	f - enemy attack
+	g - pits
+	h - spikes
+	i - level list
+	
+	
+	
+7. Tehnical Additions
+	a - settings screen
+	b* - desirializing
+	c - serializing
+	d? - random level generation and highscores?
